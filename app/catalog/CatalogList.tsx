@@ -127,6 +127,8 @@ const placeholderTints = [
   "bg-charcoal/6",
 ];
 
+const imageExtensions = ["jpg", "png"];
+
 function ProductCard({
   product,
   tintIndex,
@@ -134,19 +136,21 @@ function ProductCard({
   product: Product;
   tintIndex: number;
 }) {
-  const [imgError, setImgError] = useState(false);
+  const [extIndex, setExtIndex] = useState(0);
+  const outOfExtensions = extIndex >= imageExtensions.length;
 
   return (
     <div className="group relative aspect-[4/3] overflow-hidden rounded-xl">
-      {!imgError ? (
+      {!outOfExtensions ? (
         <>
           <Image
-            src={`/images/products/${product.slug}.jpg`}
+            key={imageExtensions[extIndex]}
+            src={`/images/products/${product.slug}.${imageExtensions[extIndex]}`}
             alt={product.name}
             fill
             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 33vw, 50vw"
             className="object-cover"
-            onError={() => setImgError(true)}
+            onError={() => setExtIndex((i) => i + 1)}
           />
           <div
             aria-hidden
