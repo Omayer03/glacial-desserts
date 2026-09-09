@@ -1,12 +1,15 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+
+const heroVideos = ["/videos/hero-bg.mp4", "/videos/about-bg.mp4"];
 
 export default function Hero() {
   const heroRef = useRef<HTMLElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [videoSrc, setVideoSrc] = useState(heroVideos[0]);
 
   const { scrollYProgress } = useScroll({
     target: heroRef,
@@ -17,8 +20,12 @@ export default function Hero() {
   const videoY = useTransform(scrollYProgress, [0, 1], [0, -35]);
 
   useEffect(() => {
-    videoRef.current?.play().catch(() => {});
+    setVideoSrc(heroVideos[Math.floor(Math.random() * heroVideos.length)]);
   }, []);
+
+  useEffect(() => {
+    videoRef.current?.play().catch(() => {});
+  }, [videoSrc]);
 
   return (
     <section
@@ -27,16 +34,16 @@ export default function Hero() {
       className="relative h-screen w-full overflow-hidden bg-charcoal"
     >
       <motion.video
+        key={videoSrc}
         ref={videoRef}
+        src={videoSrc}
         autoPlay
         loop
         muted
         playsInline
         style={{ scale: videoScale, y: videoY }}
         className="absolute inset-0 h-full w-full object-cover will-change-transform"
-      >
-        <source src="/videos/hero-bg.mp4" type="video/mp4" />
-      </motion.video>
+      />
 
       <div
         aria-hidden
