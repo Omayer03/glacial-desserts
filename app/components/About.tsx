@@ -34,6 +34,10 @@ export default function About() {
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 h-[20%] bg-gradient-to-b from-charcoal via-charcoal/70 to-transparent"
       />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-charcoal/75 via-charcoal/30 to-transparent"
+      />
 
       <div className="relative w-full py-20 sm:py-28">
         <div className="mx-auto max-w-6xl px-6 sm:px-16">

@@ -42,6 +42,10 @@ export default function Hero() {
         aria-hidden
         className="pointer-events-none absolute inset-0 z-[5] bg-gradient-to-b from-charcoal/30 via-charcoal/10 to-charcoal/35"
       />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-[5] bg-gradient-to-r from-charcoal/75 via-charcoal/30 to-transparent"
+      />
 
       <div className="relative z-10 flex h-full flex-col justify-center px-6 sm:px-16">
         <div className="max-w-xl">
