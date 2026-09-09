@@ -98,6 +98,10 @@ export default function Contact() {
         aria-hidden
         className="pointer-events-none absolute inset-0 bg-gradient-to-b from-charcoal/45 via-charcoal/20 to-charcoal/50"
       />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-charcoal/75 via-charcoal/30 to-transparent"
+      />
 
       <div className="relative py-20 sm:py-28">
         <div className="mx-auto max-w-6xl px-6 sm:px-16">
@@ -169,6 +173,7 @@ export default function Contact() {
                   <input
                     id="name"
                     type="text"
+                    placeholder="Your name"
                     value={form.name}
                     onChange={handleChange}
                     className="w-full rounded-xl border border-charcoal/10 bg-white/90 px-4 py-3 font-sans text-sm text-charcoal placeholder:text-charcoal-400 backdrop-blur-sm focus:border-raspberry focus:outline-none focus:ring-1 focus:ring-raspberry"
@@ -184,6 +189,7 @@ export default function Contact() {
                   <input
                     id="email"
                     type="email"
+                    placeholder="you@example.com"
                     value={form.email}
                     onChange={handleChange}
                     className="w-full rounded-xl border border-charcoal/10 bg-white/90 px-4 py-3 font-sans text-sm text-charcoal placeholder:text-charcoal-400 backdrop-blur-sm focus:border-raspberry focus:outline-none focus:ring-1 focus:ring-raspberry"
@@ -201,6 +207,7 @@ export default function Contact() {
                 <input
                   id="subject"
                   type="text"
+                  placeholder="How can we help?"
                   value={form.subject}
                   onChange={handleChange}
                   className="w-full rounded-xl border border-charcoal/10 bg-white/90 px-4 py-3 font-sans text-sm text-charcoal placeholder:text-charcoal-400 backdrop-blur-sm focus:border-raspberry focus:outline-none focus:ring-1 focus:ring-raspberry"
@@ -217,6 +224,7 @@ export default function Contact() {
                 <textarea
                   id="message"
                   rows={5}
+                  placeholder="Tell us about your enquiry..."
                   value={form.message}
                   onChange={handleChange}
                   className="w-full resize-none rounded-xl border border-charcoal/10 bg-white/90 px-4 py-3 font-sans text-sm text-charcoal placeholder:text-charcoal-400 backdrop-blur-sm focus:border-raspberry focus:outline-none focus:ring-1 focus:ring-raspberry"
