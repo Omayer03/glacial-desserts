@@ -372,9 +372,12 @@ function ProductModal({
 
           <AllergenSection product={product} />
 
-          <p className="mt-5 font-sans text-xs text-charcoal-400">
-            For full ingredient details, please speak to a member of staff.
-          </p>
+          <a
+            href="/#contact"
+            className="mt-5 inline-flex items-center gap-2 rounded-full bg-gold px-6 py-2.5 font-sans text-xs font-medium uppercase tracking-[0.15em] text-espresso shadow-lg shadow-black/25 transition-colors duration-300 hover:bg-gold-600"
+          >
+            Get a Quote
+          </a>
         </div>
       </motion.div>
     </motion.div>

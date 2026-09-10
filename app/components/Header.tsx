@@ -18,15 +18,22 @@ export default function Header() {
   return (
     <header className="fixed top-0 z-20 w-full border-b border-white/10 bg-espresso/30 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 sm:px-16">
-        <a href="/#home" aria-label="Glacial Desserts home" className="shrink-0">
+        <a
+          href="/#home"
+          aria-label="Glacial Desserts home"
+          className="flex shrink-0 flex-col items-center gap-1.5"
+        >
           <Image
             src="/logo.svg"
             alt="Glacial Desserts"
-            width={64}
-            height={64}
+            width={160}
+            height={160}
             priority
-            className="h-14 w-14 sm:h-16 sm:w-16"
+            className="h-16 w-16 sm:h-20 sm:w-20"
           />
+          <span className="font-serif text-[11px] font-medium uppercase tracking-[0.2em] text-gold sm:text-xs">
+            Glacial Desserts
+          </span>
         </a>
 
         <nav className="hidden md:block">
