@@ -141,7 +141,6 @@ const allergenData: Record<string, Allergens> = {
     contains: "Water, sugar, lemon juice, glucose, milk powder, coconut oil",
     mayContain: "Milk",
   },
-  "orange-delight": { mayContain: "Traces via cross-contamination" },
   "pineapple-paradise": { contains: "Milk" },
   "honey-pot": { contains: "Milk, egg, nuts" },
   "matka-pot": {
@@ -178,13 +177,13 @@ const allergenData: Record<string, Allergens> = {
     mayContain: "Peanuts, nuts, sulphites",
   },
   barry: { contains: "Milk, egg, nuts" },
-  friky: { contains: "Milk", mayContain: "Traces via cross-contamination" },
+  friky: { contains: "Milk" },
   kuaky: {
     contains: "Milk",
     mayContain: "Egg, gluten (cross-contamination risk)",
   },
   leony: { contains: "Milk, egg, nuts" },
-  punky: { contains: "Milk", mayContain: "Traces via cross-contamination" },
+  punky: { contains: "Milk" },
   "vacky-1": { contains: "Milk, egg, nuts" },
   "vacky-2": { contains: "Milk, egg, nuts" },
 };
@@ -281,7 +280,7 @@ function ProductCard({
 function AllergenSection({ product }: { product: Product }) {
   const info = allergenData[product.slug];
 
-  if (!info) {
+  if (!info || (!info.contains && !info.mayContain)) {
     return (
       <p className="mt-4 rounded-lg bg-charcoal/5 px-4 py-3 font-sans text-sm text-charcoal-600">
         Allergen info coming soon — please ask a member of staff.

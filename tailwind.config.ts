@@ -31,8 +31,8 @@ const config: Config = {
           400: "#8A7E72",
         },
         raspberry: {
-          DEFAULT: "#E8527A",
-          600: "#D63B65",
+          DEFAULT: "#017F8D",
+          600: "#015F69",
         },
         mango: {
           DEFAULT: "#FFA94D",
