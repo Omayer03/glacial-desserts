@@ -11,28 +11,23 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        navy: {
-          950: "#050810",
-          900: "#0a0f1c",
-          800: "#111a2e",
-          700: "#1a2540",
+        cream: {
+          DEFAULT: "#F7F3ED",
+          soft: "#FFF9F2",
         },
-        ice: {
-          100: "#eef6fc",
-          200: "#d7e9f7",
-          300: "#aecdea",
-          400: "#84add9",
-          500: "#5c8bc2",
-        },
-        cream: "#FFFBF5",
         charcoal: {
-          DEFAULT: "#2B2420",
+          DEFAULT: "#302A27",
           600: "#4A4038",
           400: "#8A7E72",
         },
-        raspberry: {
-          DEFAULT: "#E8527A",
-          600: "#D63B65",
+        espresso: {
+          DEFAULT: "#29221F",
+          700: "#3D332E",
+          950: "#15100D",
+        },
+        gold: {
+          DEFAULT: "#C4A46A",
+          600: "#AE8D53",
         },
         mango: {
           DEFAULT: "#FFA94D",

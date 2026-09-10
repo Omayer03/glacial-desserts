@@ -81,7 +81,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative w-full overflow-hidden bg-charcoal"
+      className="relative w-full overflow-hidden bg-espresso"
     >
       <video
         ref={videoRef}
@@ -96,11 +96,11 @@ export default function Contact() {
 
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-charcoal/45 via-charcoal/20 to-charcoal/50"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-b from-espresso/45 via-espresso/20 to-espresso/50"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-charcoal/75 via-charcoal/30 to-transparent"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-espresso/75 via-espresso/30 to-transparent"
       />
 
       <div className="relative py-20 sm:py-28">
@@ -112,7 +112,7 @@ export default function Contact() {
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="max-w-2xl"
           >
-            <p className="mb-4 font-sans text-xs font-medium uppercase tracking-[0.3em] text-raspberry">
+            <p className="mb-4 font-sans text-xs font-medium uppercase tracking-[0.3em] text-gold">
               Contact
             </p>
             <h2 className="font-serif text-3xl font-semibold leading-[1.15] text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.5)] sm:text-4xl md:text-5xl">
@@ -135,7 +135,7 @@ export default function Contact() {
                 const content = (
                   <div className="flex items-start gap-4">
                     <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/10 backdrop-blur-sm">
-                      <Icon className="h-5 w-5 text-raspberry" />
+                      <Icon className="h-5 w-5 text-gold" />
                     </span>
                     <div>
                       <p className="font-sans text-xs font-medium uppercase tracking-[0.2em] text-white/60">
@@ -176,7 +176,7 @@ export default function Contact() {
                     placeholder="Your name"
                     value={form.name}
                     onChange={handleChange}
-                    className="w-full rounded-xl border border-charcoal/10 bg-white/90 px-4 py-3 font-sans text-sm text-charcoal placeholder:text-charcoal-400 backdrop-blur-sm focus:border-raspberry focus:outline-none focus:ring-1 focus:ring-raspberry"
+                    className="w-full rounded-xl border border-charcoal/10 bg-white/90 px-4 py-3 font-sans text-sm text-charcoal placeholder:text-charcoal-400 backdrop-blur-sm focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold"
                   />
                 </div>
                 <div>
@@ -192,7 +192,7 @@ export default function Contact() {
                     placeholder="you@example.com"
                     value={form.email}
                     onChange={handleChange}
-                    className="w-full rounded-xl border border-charcoal/10 bg-white/90 px-4 py-3 font-sans text-sm text-charcoal placeholder:text-charcoal-400 backdrop-blur-sm focus:border-raspberry focus:outline-none focus:ring-1 focus:ring-raspberry"
+                    className="w-full rounded-xl border border-charcoal/10 bg-white/90 px-4 py-3 font-sans text-sm text-charcoal placeholder:text-charcoal-400 backdrop-blur-sm focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold"
                   />
                 </div>
               </div>
@@ -210,7 +210,7 @@ export default function Contact() {
                   placeholder="How can we help?"
                   value={form.subject}
                   onChange={handleChange}
-                  className="w-full rounded-xl border border-charcoal/10 bg-white/90 px-4 py-3 font-sans text-sm text-charcoal placeholder:text-charcoal-400 backdrop-blur-sm focus:border-raspberry focus:outline-none focus:ring-1 focus:ring-raspberry"
+                  className="w-full rounded-xl border border-charcoal/10 bg-white/90 px-4 py-3 font-sans text-sm text-charcoal placeholder:text-charcoal-400 backdrop-blur-sm focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold"
                 />
               </div>
 
@@ -227,7 +227,7 @@ export default function Contact() {
                   placeholder="Tell us about your enquiry..."
                   value={form.message}
                   onChange={handleChange}
-                  className="w-full resize-none rounded-xl border border-charcoal/10 bg-white/90 px-4 py-3 font-sans text-sm text-charcoal placeholder:text-charcoal-400 backdrop-blur-sm focus:border-raspberry focus:outline-none focus:ring-1 focus:ring-raspberry"
+                  className="w-full resize-none rounded-xl border border-charcoal/10 bg-white/90 px-4 py-3 font-sans text-sm text-charcoal placeholder:text-charcoal-400 backdrop-blur-sm focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold"
                 />
               </div>
 
@@ -238,7 +238,7 @@ export default function Contact() {
               )}
 
               {status === "error" && (
-                <div className="rounded-xl border border-raspberry/30 bg-raspberry/15 px-4 py-3 font-sans text-sm text-white backdrop-blur-sm">
+                <div className="rounded-xl border border-gold/30 bg-gold/15 px-4 py-3 font-sans text-sm text-white backdrop-blur-sm">
                   {errorMessage}
                 </div>
               )}
@@ -249,7 +249,7 @@ export default function Contact() {
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
                 transition={{ duration: 0.3, ease: "easeOut" }}
-                className="mt-2 inline-flex w-fit items-center gap-3 rounded-full bg-raspberry px-8 py-3 font-sans text-sm font-medium uppercase tracking-[0.15em] text-cream shadow-lg shadow-black/25 transition-colors duration-300 hover:bg-raspberry-600 disabled:cursor-not-allowed disabled:opacity-60"
+                className="mt-2 inline-flex w-fit items-center gap-3 rounded-full bg-gold px-8 py-3 font-sans text-sm font-medium uppercase tracking-[0.15em] text-espresso shadow-lg shadow-black/25 transition-colors duration-300 hover:bg-gold-600 disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {status === "loading" ? "Sending..." : "Submit"}
               </motion.button>

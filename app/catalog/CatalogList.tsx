@@ -190,7 +190,7 @@ const allergenData: Record<string, Allergens> = {
 };
 
 const placeholderTints = [
-  "bg-raspberry/12",
+  "bg-gold/12",
   "bg-mango/15",
   "bg-pistachio/15",
   "bg-charcoal/6",
@@ -242,7 +242,7 @@ function ProductPhoto({
         <>
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/15 to-transparent"
+            className="pointer-events-none absolute inset-0 bg-gradient-to-t from-espresso/85 via-espresso/15 to-transparent"
           />
           <span className="pointer-events-none absolute inset-x-3 bottom-3 font-sans text-sm font-medium text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]">
             {product.name}
@@ -266,7 +266,7 @@ function ProductCard({
     <button
       type="button"
       onClick={() => onSelect(product)}
-      className="group relative aspect-[4/3] overflow-hidden rounded-xl text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-raspberry focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
+      className="group relative aspect-[4/3] overflow-hidden rounded-xl text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
     >
       <ProductPhoto
         product={product}
@@ -331,7 +331,7 @@ function ProductModal({
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.2, ease: "easeOut" }}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-charcoal/60 px-4 py-8 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-espresso/60 px-4 py-8 backdrop-blur-sm"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
@@ -349,7 +349,7 @@ function ProductModal({
           type="button"
           onClick={onClose}
           aria-label="Close"
-          className="absolute right-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-charcoal/50 text-white backdrop-blur-sm transition-colors hover:bg-charcoal/70"
+          className="absolute right-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-espresso/50 text-white backdrop-blur-sm transition-colors hover:bg-espresso/70"
         >
           <X className="h-4 w-4" />
         </button>
@@ -358,7 +358,7 @@ function ProductModal({
           <ProductPhoto
             product={product}
             sizes="(min-width: 640px) 32rem, 100vw"
-            placeholderClassName="bg-raspberry/10"
+            placeholderClassName="bg-gold/10"
           />
         </div>
 

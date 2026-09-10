@@ -40,7 +40,7 @@ export default function Products() {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="max-w-2xl"
         >
-          <p className="mb-4 font-sans text-xs font-medium uppercase tracking-[0.3em] text-raspberry">
+          <p className="mb-4 font-sans text-xs font-medium uppercase tracking-[0.3em] text-gold">
             Products
           </p>
           <h2 className="font-serif text-3xl font-semibold leading-[1.15] text-charcoal sm:text-4xl md:text-5xl">
@@ -65,7 +65,7 @@ export default function Products() {
               href={`/catalog#${slug}`}
               variants={cardVariants}
               whileHover={{ y: -4, transition: { duration: 0.3, ease: "easeOut" } }}
-              className="group relative flex aspect-[4/3] flex-col justify-end overflow-hidden rounded-2xl transition-shadow duration-300 hover:shadow-xl hover:shadow-charcoal/20"
+              className="group relative flex aspect-[4/3] flex-col justify-end overflow-hidden rounded-2xl transition-shadow duration-300 hover:shadow-xl hover:shadow-espresso/20"
             >
               <Image
                 src={`/images/${slug}.jpg`}
@@ -76,7 +76,7 @@ export default function Products() {
               />
               <div
                 aria-hidden
-                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/10 to-transparent"
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-espresso/80 via-espresso/10 to-transparent"
               />
               <div className="relative p-6">
                 <span className="font-serif text-xl font-semibold text-white drop-shadow-[0_1px_6px_rgba(0,0,0,0.4)] sm:text-2xl">

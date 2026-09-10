@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative flex min-h-[70vh] w-full items-center overflow-hidden bg-gradient-to-br from-charcoal to-charcoal-600 sm:min-h-[80vh]"
+      className="relative flex min-h-[70vh] w-full items-center overflow-hidden bg-gradient-to-br from-espresso to-espresso-700 sm:min-h-[80vh]"
     >
       <div className="relative w-full py-20 sm:py-28">
         <div className="mx-auto max-w-6xl px-6 sm:px-16">
@@ -17,7 +17,7 @@ export default function About() {
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="max-w-xl"
           >
-            <p className="mb-4 font-sans text-xs font-medium uppercase tracking-[0.3em] text-raspberry">
+            <p className="mb-4 font-sans text-xs font-medium uppercase tracking-[0.3em] text-gold">
               About Us
             </p>
             <h2 className="font-serif text-3xl font-semibold leading-[1.15] text-white sm:text-4xl md:text-5xl">
@@ -38,7 +38,7 @@ export default function About() {
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
-              className="mt-8 inline-flex items-center gap-3 rounded-full bg-raspberry px-8 py-3 font-sans text-sm font-medium uppercase tracking-[0.15em] text-cream shadow-lg shadow-black/25 transition-colors duration-300 hover:bg-raspberry-600"
+              className="mt-8 inline-flex items-center gap-3 rounded-full bg-gold px-8 py-3 font-sans text-sm font-medium uppercase tracking-[0.15em] text-espresso shadow-lg shadow-black/25 transition-colors duration-300 hover:bg-gold-600"
             >
               Contact Now
             </motion.a>
