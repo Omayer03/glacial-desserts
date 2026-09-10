@@ -31,7 +31,7 @@ export default function Hero() {
     <section
       ref={heroRef}
       id="home"
-      className="relative h-screen w-full overflow-hidden bg-charcoal"
+      className="relative h-screen w-full overflow-hidden bg-espresso"
     >
       <motion.video
         key={videoSrc}
@@ -47,11 +47,11 @@ export default function Hero() {
 
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 z-[5] bg-gradient-to-b from-charcoal/30 via-charcoal/10 to-charcoal/35"
+        className="pointer-events-none absolute inset-0 z-[5] bg-gradient-to-b from-espresso/30 via-espresso/10 to-espresso/35"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 z-[5] bg-gradient-to-r from-charcoal/75 via-charcoal/30 to-transparent"
+        className="pointer-events-none absolute inset-0 z-[5] bg-gradient-to-r from-espresso/75 via-espresso/30 to-transparent"
       />
 
       <div className="relative z-10 flex h-full flex-col justify-center px-6 sm:px-16">
@@ -62,7 +62,7 @@ export default function Hero() {
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="mb-5 flex items-center font-sans text-xs font-medium uppercase tracking-[0.3em] text-white/85 drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]"
           >
-            <span className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-raspberry" />
+            <span className="mr-2 inline-block h-1.5 w-1.5 rounded-full bg-gold" />
             Global Sourcing &middot; Est. 2016
           </motion.p>
           <motion.h1
@@ -93,7 +93,7 @@ export default function Hero() {
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.3, ease: "easeOut" }}
-              className="group inline-flex items-center gap-3 rounded-full bg-raspberry px-8 py-3 font-sans text-sm font-medium uppercase tracking-[0.15em] text-cream shadow-lg shadow-black/25 transition-colors duration-300 hover:bg-raspberry-600"
+              className="group inline-flex items-center gap-3 rounded-full bg-gold px-8 py-3 font-sans text-sm font-medium uppercase tracking-[0.15em] text-espresso shadow-lg shadow-black/25 transition-colors duration-300 hover:bg-gold-600"
             >
               Explore Our Collection
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
